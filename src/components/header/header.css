@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500&display=swap");
+.contianer-2 {
+  display: flex;
+  background: #0f1014 ;
+  height:70px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  font-family: "myfont";
+  z-index: 100;
+  top: 0px;
+}
+.transparent{
+  background-color: transparent;
+}
+.container-2-1 {
+  padding: 20px 30px;
+  color: red;
+  font-size: 19px;
+}
+
+.container-2-2 a {
+  color: #aaa;
+  font-size: 18px;
+  text-decoration: none;
+  
+  text-decoration: none;
+  margin: 0px 2vw;
+}
+
+.container-2-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+.container-2-3-1 img {
+  border: solid black;
+  border-radius: 100px;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+}
+.container-2-5 a{
+  color:white;
+  text-decoration: none;
+padding: 0px 20px;
+
+
+}
+.container-2-5{
+  display: none;
+}
+.container-2-4{
+  display: none;
+}
+
+@media   (max-width:746px) {
+
+  .container-2-1{
+    font-size: 14px;
+  }
+  .container-2-2 a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width:600px){
+
+  .container-2-2{
+    display: none;
+  }.container-2-3{
+    display: none;
+  }
+  .container-2-5{
+    display: block;
+   
+  }
+  .container-2-4{
+    background: #0f1014 ;
+    position: fixed;
+    bottom: 0px;
+    z-index: 20;
+    padding: 5px;
+    border: solid rgba(255, 255, 255, 0.275) 1px;
+    width: 97%;
+   
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .container-2-4 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    font-family: "myfont";
+    font-size: 15px;
+  }
+  .container-2-4 div span img{
+    /* background-color: #0f1014; */
+    width: 25px;
+    color: white;
+
+  }
+}

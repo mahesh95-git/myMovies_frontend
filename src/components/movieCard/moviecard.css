@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "myfont";
+  src: url("/Inconsolata-SemiBold.48078943786e07ddb6c8.ttf");
+}
+
+.poster {
+  font-family: "myfont";
+  box-sizing: border-box;
+  width: 14vw;
+  position: relative;
+  height: 10%;
+
+}
+
+.poster img {
+  width: 14vw;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.title {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+.details {
+  overflow: hidden;
+  padding: 5px;
+  display: none;
+  width: 100%;
+}
+.imageLoader{
+  width: 14vw;
+  min-height:322.55px ;
+  background-color: rgb(20, 22, 26);
+  border-radius: 5px;
+}
+.temp {
+  bottom: 0px;
+  display: flex;
+  position: absolute;
+  background: linear-gradient(
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.852),
+    rgb(0, 0, 0)
+  );
+  height: 0%;
+  transition: height 0.3s ease-out; /* Updated the transition */
+  color: white;
+  align-items: end;
+}
+
+.poster:hover .temp {
+  height: 80%;
+}
+
+.poster:hover .details {
+  display: block;
+  opacity: 1;
+  height: 80%;
+}
+
+.delete-container{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.delete-container button{
+  background-color:transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.duration-container{
+  min-height: 5px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+  background-color:blue;
+}
+
+
+
+.duration-container span{
+
+}
+
+
+.delete-container button img{
+  width: 30px;
+}
+.description {
+  max-height: 50px;
+  font-size: 15px;
+  overflow: hidden;
+  margin-top: 5px;
+  padding: 10px 5px;
+}
+.tags {
+  margin-top: 5px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.tag {
+  background-color: transparent;
+  color: #ffffff;
+  border-left: solid rgb(102, 102, 102) 2px;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+  border-radius: 2px;
+}
+.cta {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+.cta .watch-button {
+  width: 100px;
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: rgb(179, 179, 179);
+  font-weight: bold;
+}
+.watchlist-button {
+  width: 50px;
+  height: 25px;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(179, 179, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.watchlist-button img {
+  width: 23px;
+}
+.wb {
+  position: relative;
+  display: flex;
+}
+.wb span {
+  bottom: 25px;
+  left: 30px;
+
+  position: absolute;
+  border-radius: 10px 0px;
+  padding: 5px;
+  background-color: rgb(23, 23, 23);
+  display: none;
+}
+.wb:hover span {
+  display: block;
+}
+@media (max-width:600px){
+.temp{
+  display: none;
+}
+.poster img {
+width: 120px;
+}
+.poster{
+  width: 120px;
+}
+
+.imageLoader{
+  width: 120px;
+  min-height: 180px;
+}
+
+}
+
+@media(min-width:601px) and (max-width:1000px){
+  .temp{
+    display: none;
+  }
+  .poster img {
+  width: 150px;
+  }
+  .poster{
+   
+    width: 150px;
+  }
+  .imageLoader{
+    width: 150px;
+    min-height: 190px;
+  }
+  
+}
+

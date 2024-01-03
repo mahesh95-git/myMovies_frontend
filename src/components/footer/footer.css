@@ -1,0 +1,46 @@
+.container-9{
+    display: flex;
+gap: 40px;
+    background-color:#0f1014;
+    color: rgba(255, 255, 255, 0.758);
+    padding: 20px 0px;
+    height: 200px;
+    width: 100%;
+    border-top: rgba(255, 255, 255, 0.401) solid 0.5px ;
+}
+.container-9-3{
+
+padding: 10px;
+
+}
+.container-9-2{
+   
+    padding: 10px;
+    text-align: center;
+
+}
+.container-9-3-1 a{
+    text-decoration: none;
+    
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.758);
+}
+.container-9-2-1{
+    color: red;
+  
+    
+}
+
+@media (max-width:600px){
+    .container-9{
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 50px;
+        }
+        .container-9-3 {
+            text-align: center;
+            }
+            .container-9-2{
+                font-size: 14px;
+            }
+}

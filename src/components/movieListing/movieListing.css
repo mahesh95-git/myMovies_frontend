@@ -1,0 +1,51 @@
+.container-10{
+  display: flex;
+  flex-direction: column;
+
+}
+.container-10-1 {
+  padding: 10px 10px;
+  color: #e1e6f0;
+  display: flex;
+  justify-content: space-between;
+  font-family: "myfont";
+  gap: 10px;
+  align-items: center;
+}
+.container-10-1 span{
+  text-align: center;
+  align-self: center;
+  font-size: 18px;
+
+}
+.container-10-1 a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container-10-1 span:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container-10-2 {
+  margin: 10px;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@media (max-width:600px){
+  .container-10-1 span{
+    font-size: 18px;
+    
+  }
+    .container-10-1 h2{
+font-size: 18px;
+
+  }
+  }
+  

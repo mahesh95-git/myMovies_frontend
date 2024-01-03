@@ -1,0 +1,231 @@
+.form-container {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 20px;
+  gap: 10px;
+}
+.form-container input[type="text"],
+input[type="file"],
+input[type="number"],
+textarea {
+  background-color: #1b1c1d;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  display: block;
+  color: white;
+  padding: 5px 20px;
+  resize: none;
+}
+
+.genres,
+.languages {
+  border-bottom: rgba(255, 255, 255, 0.356) 0.5px solid;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+#language,
+#genre {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.castName-container {
+  border-top: rgba(255, 255, 255, 0.356) 0.5px solid;
+  border-bottom: rgba(255, 255, 255, 0.356) 0.5px solid;
+  display: flex;
+  padding: 10px 0px;
+  gap: 5px;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.castName-container span {
+  background-color: white;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+.cast-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.addCast {
+  width: 50px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.addContent {
+  width: 100px;
+  border: 5px;
+  border-radius: 5px;
+  height: 30px;
+}
+.container-5 {
+  display: flex;
+  background-color: #0f1014;
+  width: 100%;
+  gap: 20px;
+}
+.container-5-1 {
+  width: 20vw;
+}
+.allOptions {
+  font-size: 20px;
+}
+.allOptions h2 {
+  color: red;
+  padding: 10px;
+}
+.allOptions li {
+  padding: 20px 10px;
+  list-style: none;
+
+  border-top: solid rgba(255, 255, 255, 0.171) 0.3px;
+}
+
+.allOptions li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* get all User */
+.container-6 {
+  width: 100%;
+  color: white;
+  min-height: 100vh;
+  overflow-y: scroll;
+}
+.user-container table {
+  background-color: black;
+  width: 100%;
+}
+.user-container table thead {
+  border-bottom: solid black 1px;
+  background-color: #212121;
+  text-align: center;
+}
+.user-container table thead tr {
+  height: 40px;
+}
+.user-container table tbody {
+  border-bottom: solid black 1px;
+  background-color: #212121;
+  text-align: center;
+}
+.user-container table tbody tr {
+  height: 40px;
+}
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+}
+.pagination span {
+  font-size: 20px;
+}
+.pagination button {
+  margin: 4px;
+  border: solid black 2px;
+  display: inline-block;
+  background-color: #212121;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  border-radius: 4px;
+}
+.pagination button:hover {
+  background-color: red;
+}
+
+/*update user profile
+*/
+.container-7 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 50px;
+  color: white;
+  gap: 10px;
+}
+.container-7-2 {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container-7-2 input {
+  height: 25px;
+  background-color: #333;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  width: 33vw;
+  color: white;
+  padding: 5px 20px;
+  resize: none;
+}
+.container-7-2 button,
+.update {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+.block {
+  background-color: #0f1014;
+
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 15px;
+  cursor: pointer;
+  color: white;
+}
+.container-update {
+  display: flex;
+  justify-content: end;
+  border-bottom: rgba(255, 255, 255, 0.326) solid;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+}
+.container-7-3 {
+  padding: 10px;
+}
+.container-7-3 input {
+  height: 25px;
+  background-color: transparent;
+  border-bottom: rgba(255, 255, 255, 0.326) solid;
+  outline: none;
+  border-right: none;
+  width: 40vw;
+  margin-bottom: 10px;
+  color: white;
+  padding: 5px 20px;
+  resize: none;
+}
+.container-7-3 select {
+  width: 100px;
+  background-color: #333;
+  color: white;
+  height: 30px;
+  border-radius: 2px;
+}

@@ -1,0 +1,98 @@
+.container-15 {
+  padding: 10px;
+}
+.container-15-1 {
+  color: white;
+  font-family: "myfont";
+}
+.container-15-2 .container-title {
+  font-size: 20px;
+}
+.container-15-4{
+    width: 100%;
+}
+.container-15-2 {
+  width: 100%;
+  padding: 5px;
+
+  margin-top: 5px;
+
+  display: flex;
+  cursor: pointer;
+  border-top: rgba(255, 255, 255, 0.064) solid 1px;
+  color: white;
+  align-items: center;
+  gap: 30px;
+}
+.container-15-2-2 {
+  display: flex;
+  flex-direction: column;
+  font-family: "myfont";
+  height: 130px;
+  padding: 10px;
+  width: 50%;
+  gap: 5px;
+  font-size: 18px;
+}
+.container-15-2-1 {
+  display: flex;
+  position: relative;
+}
+.container-15-2-1 img {
+  width: 100px;
+}
+.container-15-2-1 button {
+  position: absolute;
+  top: 56px;
+  right: 38px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.container-15-2 button img {
+  width: 20px;
+}
+.container-container-details .episodeNo,.date, .duration{
+  margin-left: 10px;
+ 
+  /* background-color: red; */
+}
+.container-container-details .episodeNo,.date span{
+  margin-left: 4px;
+}
+
+
+@media (max-width:600px) {
+  .container-15-1{
+    font-size: 13px;
+  }
+
+  
+  .container-15-2-1 img{
+    width: 110px;
+  }
+  /* .container-15-2-2{
+    background-color: darkblue;
+  } */
+  .container-15-2 .container-title {
+    font-size: 17px;
+  }
+  .container-container-details .episodeNo,.date, .duration{
+    margin-left: 2px;
+   
+    /* background-color: red; */
+  }
+  
+  .container-15-2{
+    gap: 5px;
+  }
+  .container-15-2-2 {
+    width: 100%;
+    overflow: scroll;
+    height: 100%;
+    font-size: 16px;
+    
+  }
+}
