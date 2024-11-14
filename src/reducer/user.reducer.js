@@ -26,7 +26,6 @@ const userReducer = createSlice({
       state.loader = false;
     }),
       builder.addCase(loadUserDetail.rejected, (state, action) => {
-        toast.error(action.error.message);
         state.loader = false;
       });
 

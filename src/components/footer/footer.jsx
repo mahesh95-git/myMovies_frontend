@@ -1,30 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+
 import "./footer.css";
 function Footer() {
-  const options = [
-    {
-      name: "Home",
-      path: "/",
-    },
-    {
-      name: "Movies",
-      path: "/movies",
-    },
-
-    {
-      name: "Webseries",
-      path: "/webseries",
-    },
-    {
-      name: "Watchlist",
-      path: "/watchlist",
-    },
-    {
-      name: "Search",
-      path: "/search",
-    },
-  ];
+ 
   return (
     <div className="container-9">
   

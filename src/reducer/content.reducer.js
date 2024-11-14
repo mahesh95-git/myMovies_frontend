@@ -18,9 +18,7 @@ const initialState = {
   },
   recommendeContent: {
     loader: true,
-    data: {
-      content: [],
-    },
+    data: [],
     error: null,
   },
   watchlist: {
@@ -85,9 +83,7 @@ export const contentReducer = createSlice({
       state.movieDetail.loader = false;
     });
     // add movie to watchList extraReducuer
-    builder.addCase(addmovieToWatchList.pending, (state) => {
-      state.movieDetail.loader = true;
-    });
+
     //add movie to watchList extraReducer
     builder.addCase(addmovieToWatchList.fulfilled, (state, action) => {
       toast.success(action.payload.message);
@@ -107,8 +103,9 @@ export const contentReducer = createSlice({
       state.recommendeContent.loader = true;
     });
     builder.addCase(getRecommendedContent.fulfilled, (state, action) => {
-      state.recommendedMovies.data.content = action.payload;
-      state.recommendedMovies.loader = false;
+      console.log(action.payload)
+      state.recommendeContent.data = action.payload;
+      state.recommendeContent.loader = false;
     });
     builder.addCase(getRecommendedContent.rejected, (state, action) => {
       state.recommendeContent.loader = false;
@@ -148,7 +145,7 @@ export const contentReducer = createSlice({
     });
     builder.addCase(getEpisodes.rejected, (state, action) => {
       state.episodes.loader = false;
-      toast.error(action.error.message);
+     
     });
     // get view all content extraReducer
     builder.addCase(getViewAll.pending, (state) => {

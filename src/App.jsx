@@ -29,6 +29,8 @@ import ViewAll from "./components/viewAll/viewAll";
 import ForgotePassword from "./pages/forgotePassword";
 import { Toaster } from "react-hot-toast";
 import ResetPassword from "./components/changePassword/changePassword";
+import { PaymentForm } from "./components/payment";
+
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -44,6 +46,7 @@ function App() {
          
             <Route path="signup" element={<Singup />} />
             <Route path="signin" element={<SignIn />} />
+            <Route path="payment" element={<PaymentForm/>}/>
             <Route path="/forgotPassword" element={<ForgotePassword />} />
             <Route path="/forgotpassword/:token" element={<ChangePassword />} />
             <Route element={<PrivateRoute isAuthicated={true} />}>

@@ -83,7 +83,7 @@ padding: 0px 20px;
     bottom: 0px;
     z-index: 20;
     padding: 5px;
-    border: solid rgba(255, 255, 255, 0.275) 1px;
+    border: solid rgba(255, 255, 255, 0.089) 0.5px;
     width: 97%;
    
     border-radius: 5px;
@@ -102,6 +102,8 @@ padding: 0px 20px;
   .container-2-4 div span img{
     /* background-color: #0f1014; */
     width: 25px;
+    border-radius: 50%;
+    height: 25px;
     color: white;
 
   }

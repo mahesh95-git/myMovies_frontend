@@ -23,7 +23,7 @@ function MovieDetail() {
   const [changeButton, setChangebutton] = useState(false);
   const [percentageWatched, setPercentageWatched] = useState(0);
   const videoRef = useRef(null);
-  const { movieDetail, recommendedMovies } = useSelector(
+  const { movieDetail, recommendeContent } = useSelector(
     (state) => state.content
   );
   const [videourl, setvideourl] = useState("");
@@ -200,13 +200,13 @@ function MovieDetail() {
         </>
       )}
 
-      {recommendedMovies.loader ? (
+      {recommendeContent.loader ? (
         <Loader />
       ) : (
         <div className="container-11-4">
           <MovieListing
             movieSection={"Recommended"}
-            movieInfo={recommendedMovies.data.movies}
+            movieInfo={recommendeContent.data}
             id={null}
           />
         </div>

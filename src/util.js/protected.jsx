@@ -15,7 +15,7 @@ const PrivateRoute = ({ ...rest }) => {
     return <Loader3 />;
   }
   if (isAuthicated && isLogIn === isAuthicated) {
-    return <Outlet />;
+    return <Outlet/>;
   }
 
   return null;
